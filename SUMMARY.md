@@ -4,7 +4,7 @@
 - [Basics](basics/basics.md)
   - [前提](basics/requirements.md)
   - [`dev.to` part 1](basics/dev_to1.md)
-  - [復習: インターネットと Web](basics/recap.md)
+  - [複習: Internet 與 Web](basics/recap.md)
   - [`dev.to` part 2](basics/dev_to2.md)
   - [アプリケーションサーバ, 「動的生成」](basics/app_server.md)
   - [API 設計, 「状態」](basics/api_design.md)
