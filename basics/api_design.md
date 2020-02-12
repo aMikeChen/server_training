@@ -21,7 +21,7 @@
         - Body 的格式（**IDL; Interface Description Language**）使用 **XML** 或 **JSON** 的比較多
     - 也有問題點
         - 受限的表達力。比較難用「資源」與「對其所作的操作」來表達的處理也很多
-        - Body 的格式沒有與用來嚴格定義的 **Schema 語言; Schema Language** 綁定
+        - Body 的格式沒有與用來嚴格定義的 **Schema 語言; Schema Language** 綁定
             - 雖然每個的 IDL 還是存在，但可能難以使用，或表達力很低
             - 結果，API spec/documentation 的格式變的不一致，程式碼的自動產生變得很困難
         - 沒有統一的方法來組合多個流程的處理
@@ -31,7 +31,7 @@
 
 - **grpc**
     - 在 **HTTP 2.0** 上實現的 Protocol
-        - 在 HTTP 2.0 中可以只維持一個 TCP Connection，但在其中收發多個 HTTP Request
+        - 在 HTTP 2.0 中可以只維持一個 TCP Connection，但在其中收發多個 HTTP Request
     - 使用 **Protocol Buffer (protobuf)** 作為 IDL。**與 Schema 語言綁定**
     - **RPC; Remote Procedure Call** 跟名字一樣就是往遠端伺服器發送指令的意思，以及它的格式
         - 叫做 RPC 的 Protocol 的情況:
@@ -50,10 +50,10 @@
     - 作為對 RESTful 所擁有的一些問題的解答，
         - 多個處理組合的表示、
         - Schema 語言、
-        - 減少接收到的資訊等特點
+        - 減少接收到的資訊等特點
     - 大多用實現於 HTTP 1.1 之上，不過這也是 RPC 介面的一種（在 body 表達全部），
       從原理上 transport protocol 是什麼都行
-    - 正被使用於某些專案上
+    - 正被使用於某些專案上
 
 ---
 
