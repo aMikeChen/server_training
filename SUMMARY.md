@@ -8,7 +8,7 @@
   - [`dev.to` part 2](basics/dev_to2.md)
   - [應用程式伺服器, 「動態生成」](basics/app_server.md)
   - [API 設計, 「狀態」](basics/api_design.md)
-  - [「リソース」, データベース](basics/database.md)
+  - [「資源」, 資料庫](basics/database.md)
   - [「キャッシュ」そして「分散」](basics/distribution.md)
   - [結び](basics/conclusion.md)
 - [Elixir](elixir/elixir.md)
