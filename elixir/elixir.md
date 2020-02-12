@@ -2,15 +2,15 @@
 
 ---
 
-## まえがき
+## 前言
 
-- この文書は:
-  - [@access-company]の新卒技術研修、ハンズオン資料
-  - 2018 年度作成、2019 年度改定
-    - 題材としていた HipChat がサービス終了したので内容変更。及び、分量が多かったのでより言語基礎的な内容中心に調整
-  - 文責は[@ymtszw]
-  - その名の通り Elixir の基礎。2 時間程度を想定
-- 内外の方へ: Issue/PR ください
+- 關於這份文件:
+  - [@access-company]的新人技術培訓資料
+  - 2018 年度完成、2019 年度改版
+    - 由於用作題材的 HipChat 結束服務了，因此修改內容。加上內容過多，因此調整成更加關注於語言基礎的部分
+  - 文案負責人為[@ymtszw]
+  - Elixir 的基礎。約 2 個小時的程度
+- 給所有人：請發 Issue/PR
 
 [@access-company]: https://github.com/access-company
 [@ymtszw]: https://github.com/ymtszw
