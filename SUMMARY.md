@@ -10,7 +10,7 @@
   - [API 設計, 「狀態」](basics/api_design.md)
   - [「資源」, 資料庫](basics/database.md)
   - [「快取」及「分散」](basics/distribution.md)
-  - [結び](basics/conclusion.md)
+  - [總結](basics/conclusion.md)
 - [Elixir](elixir/elixir.md)
   - [環境構築](elixir/requirements.md)
   - [Elixir とは](elixir/what.md)
