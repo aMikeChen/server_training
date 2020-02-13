@@ -16,7 +16,7 @@
   - [什麼是 Elixir](elixir/what.md)
   - [為何 Elixir](elixir/why.md)
   - [語法基礎](elixir/syntax.md)
-  - [パターンマッチ](elixir/pattern_match.md)
+  - [模式比對](elixir/pattern_match.md)
   - [文字列と Map](elixir/string_and_map.md)
   - [モジュールと関数](elixir/module_and_function.md)
   - [Enum と`|>`](elixir/enum_and_pipe.md)
