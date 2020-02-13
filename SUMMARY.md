@@ -13,7 +13,7 @@
   - [總結](basics/conclusion.md)
 - [Elixir](elixir/elixir.md)
   - [環境建立](elixir/requirements.md)
-  - [Elixir とは](elixir/what.md)
+  - [什麼是 Elixir](elixir/what.md)
   - [なぜ Elixir か](elixir/why.md)
   - [文法基礎](elixir/syntax.md)
   - [パターンマッチ](elixir/pattern_match.md)

@@ -1,61 +1,61 @@
-## Elixir とは
+## 什麼是 Elixir
 
-- このページの目標
-  - キーワードの認識を通し、Elixir の特徴の大枠を掴む
-- 所要時間: 5 分程度
+- 這個頁面的目標
+  - 認識關鍵字、掌握 Elixir 大概的特徵
+- 所需時間: 5 分鐘
 
-- レッツゴー公式 => https://elixir-lang.org/
+- 官方網站 => https://elixir-lang.org/
 
 > Elixir is a dynamic, functional language designed for building scalable and maintainable applications.
 
-- 動的型付け
-- 関数型
-- [Scalable][dist]なアプリケーションを書ける
-- [Maintainable](https://skirino.github.io/slides/advice_for_new_graduates.html)なアプリケーションを書ける
-- [José Valim](https://github.com/josevalim)が創始者。[Plataformatec 社](http://plataformatec.com.br/)が中心的にサポートしている
+- 動態型別
+- 函數式
+- 能寫出 [Scalable][dist] 的 Application
+- 能寫出 [Maintainable](https://skirino.github.io/slides/advice_for_new_graduates.html) 的 Application
+- 作者為 [José Valim](https://github.com/josevalim)。主要由 [Plataformatec 公司](http://plataformatec.com.br/) 支援開發
 
 [dist]: ../basics/distribution.html
 
 > Elixir leverages the Erlang VM, known for running low-latency, distributed and fault-tolerant systems,
 > while also being successfully used in web development and the embedded software domain.
 
-- [Erlang VM](http://www.erlang.org/)を活用する
-- 低遅延で、
-- [分散された][dist]、
-- 障害耐性を持ったシステムを実行できる VM
-- Ericsson 社が開発し、1998 年から OSS
+- 使用 [Erlang VM](http://www.erlang.org/)
+- 能夠低延遲地執行，
+- [分散的][dist]、
+- 且高容錯之系統的 VM
+- 由 Ericsson 公司開發，自 1998 年 OSS 化
 
 ---
 
-### Erlang との **相互運用性; interoperability**
+### 與 Erlang 的 **互用性; interoperability**
 
-- Elixir プログラムは Erlang VM(BEAM)用のバイトコード(.beam ファイル)にコンパイルされ、Erlang VM で実行される
-- コンパイルされた beam ファイルは Erlang 由来のものと同等で、同時に組み合わせて実行できる
-- Erlang VM ではコードの管理単位は **module** というが、Elixir プログラムから Erlang の module を呼び出したりすることも可能
-- 似たような関係性を持つ言語や VM はほかにもある
-  - 例) Scala プログラムは JVM 向けにコンパイルされ、Java プログラムと組み合わせて実行できる
-
----
-
-### その他の言語的特徴
-
-- 文法の見た目は多少 Ruby に似ているが、**似ているだけ**
-- 強力な**パターンマッチ構文**
-- Erlang VM をそのまま使うので、Erlang VM の特長を受け継ぐ
-  - 軽量プロセス
-  - メッセージパッシング
-  - OTP(軽量プロセスの階層構造、クラッシュの局所化、自動復旧機構)
-  - 分散コンピューティング
-- コンパイル時にコード自動生成など、様々な処理を行える環境が整っている(マクロ、metaprogramming)
+- Elixir 的程式碼會被編譯成 Erlang VM(BEAM) 用的 bytecode(.beam 檔)，並由 Erlang VM 執行
+- 編譯後的 beam 檔與從 Erlang 編譯過的相等，同時也可以組合起來執行
+- 在 Erlang VM 中的程式碼管理單元為 **module**，不過也可以在 Elixir 呼叫 Erlang 的 module
+- 其他也有類似特性的語言或 VM
+  - 例）Scala 的程式碼會被編譯成 JVM 能夠執行的 bytecode，可以與 Java 程式組合執行
 
 ---
 
-### ツールチェーン
+### 其他語言特徵
 
-- 言語同梱ツール
-  - `mix` - ビルドツール兼タスクランナー
+- 語法看起來與 Ruby 相似，但**只是相似而已**
+- 強大的**Pattern Matching**
+- 因為直接使用 Erlang VM，因此繼承 Erlang VM 的特點
+  - 輕量 Process
+  - Message Passing
+  - OTP（輕量 Process 的階層結構、局部化崩潰、自動復原機制）
+  - 分散式計算
+- 在編譯期的程式碼自動生成等，能夠進行各種處理的環境（Macro、Metaprogramming）
+
+---
+
+### 工具鍊
+
+- 語言綁定工具
+  - `mix` - 建構工具兼 Task 執行
   - `iex` - REPL
-  - `ex_unit` - テストライブラリ
-- [hex.pm](https://hex.pm) - パッケージ管理
-- `ex_doc` - ドキュメント生成ツール
-  - [hexdocs.pm](https://hexdocs.pm) - オンラインドキュメント
+  - `ex_unit` - Testing Library
+- [hex.pm](https://hex.pm) - Package 管理
+- `ex_doc` - 文件生成工具
+  - [hexdocs.pm](https://hexdocs.pm) - 線上文件
