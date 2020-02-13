@@ -12,7 +12,7 @@
   - [「快取」及「分散」](basics/distribution.md)
   - [總結](basics/conclusion.md)
 - [Elixir](elixir/elixir.md)
-  - [環境構築](elixir/requirements.md)
+  - [環境建立](elixir/requirements.md)
   - [Elixir とは](elixir/what.md)
   - [なぜ Elixir か](elixir/why.md)
   - [文法基礎](elixir/syntax.md)

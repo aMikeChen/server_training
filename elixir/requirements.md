@@ -1,18 +1,18 @@
-## 環境構築
+## 環境建立
 
-- 環境構築できていることを確認します。所要時間: 5 分未満
-- もし準備が行き届いていなければ時間を取ります。〜20 分程度
+- 確認環境已建立完成。所需時間: 5 分鐘內
+- 如果沒有準備的話要多花點時間。～20 分鐘
 
 ---
 
-- **以下ハンズオンの際、準備を済ませてあることを期待します**
-- 社内的には、[asdf](https://github.com/asdf-vm/asdf)を使うことを推奨しています
-  - asdf について詳細は[公式ガイド](https://asdf-vm.com/#/core-manage-asdf-vm)参照
-- Erlang 20.3.8.9 と Elixir 1.7.4 をインストールしておきましょう(2019/05)
+- **請在 Hands on 之前將完成以下準備**
+- 公司內推薦使用 [asdf](https://github.com/asdf-vm/asdf)
+  - asdf 的詳細請參考[官方指南](https://asdf-vm.com/#/core-manage-asdf-vm)
+- 先將 Erlang 20.3.8.9 與 Elixir 1.7.4 裝好吧 (2019/05)
 
-### 念のため: 大雑把な手順
+### 以防萬一：大致的步驟
 
-- (Bash 系を想定)
+- (假設使用 Bash)
 
 ```
 $ git clone https://github.com/asdf-vm/asdf.git ~/.asdf
@@ -21,13 +21,13 @@ $ brew coreutils automake autoconf openssl libyaml readline libxslt libtool unix
 $ asdf plugin-add erlang
 $ asdf plugin-add elixir
 $ asdf install erlang x.y.z && asdf global erlang x.y.z
-(ここ、それなりに時間がかかるはず)
+（這邊會花費一些時間）
 $ asdf install elixir i.j.k && asdf global elixir i.j.k
 ```
 
-- openssl 等は必須となります。忘れがちなので注意！
+- openssl 是必須的，容易忘記請注意！
 
-  - openssl なしで Erlang をインストールしてしまい、あとから`ssl`関連のエラーが発生した場合は Erlang を再インストールして下さい
+  - 沒有 openssl 就直接裝 Erlang 之後發生與 `ssl` 相關的錯誤的話，請將 Erlang 重新安裝
 
     ```
     $ brew coreutils automake autoconf openssl libyaml readline libxslt libtool unixodbc wxmac unzip curl
@@ -35,9 +35,9 @@ $ asdf install elixir i.j.k && asdf global elixir i.j.k
     $ asdf install erlang x.y.z
     ```
 
-## ターミナル、エディタ
+## Terminal、編輯器
 
-- ターミナルは macOS 標準の Terminal.app で最初は十分です
-  - 個人的なおすすめは分割表示などが柔軟にできる[iTerm2](https://www.iterm2.com/)です
-- なんでもいいので、テキストエディタを用意しておきましょう
-  - はじめは Elixir のシンタックスハイライトがあったほうがいいかもしれません
+- Terminal 剛開始使用 macOS 標準的 Terminal.app 即可
+  - 個人推薦能夠彈性地對視窗做分割的[iTerm2](https://www.iterm2.com/)
+- 先準備好文字編輯器吧！什麼都可以
+  - 剛開始有個 Elixir 的語法高亮功能可能會比較好
