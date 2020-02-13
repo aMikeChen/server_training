@@ -15,7 +15,7 @@
   - [環境建立](elixir/requirements.md)
   - [什麼是 Elixir](elixir/what.md)
   - [為何 Elixir](elixir/why.md)
-  - [文法基礎](elixir/syntax.md)
+  - [語法基礎](elixir/syntax.md)
   - [パターンマッチ](elixir/pattern_match.md)
   - [文字列と Map](elixir/string_and_map.md)
   - [モジュールと関数](elixir/module_and_function.md)
